@@ -20,6 +20,7 @@ public class Student {
     private Long id;
     private String firstname;
     private String lastname;
+    @Column(unique = true, nullable = false)
     private String email;
     @Enumerated(EnumType.STRING)
     private Grade grade;
