@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import sk.stuba.fei.uim.vsa.web.response.StudentDto;
 
 import javax.persistence.*;
 
@@ -22,6 +23,14 @@ public class Student {
     private String email;
     @Enumerated(EnumType.STRING)
     private Grade grade;
+
+    public Student(StudentDto dto) {
+        this.id = dto.getId();
+        this.firstname = dto.getFirstname();
+        this.lastname = dto.getLastname();
+        this.email = dto.getEmail();
+        this.grade = dto.getGrade();
+    }
 
 
 }

@@ -10,8 +10,26 @@ public class StudentService {
 
     EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
 
-    public Student getStudent(final Long id) {
+    public Student findStudentById(final Long id) {
         EntityManager em = emf.createEntityManager();
-        return em.find(Student.class, id);
+        Student student = em.find(Student.class, id);
+        em.close();
+        return student;
+    }
+
+    public Student saveStudent(Student student) {
+        EntityManager em = emf.createEntityManager();
+        try {
+            em.getTransaction().begin();
+            em.persist(student);
+            em.getTransaction().commit();
+        } catch (Exception e) {
+            if(em.getTransaction().isActive()) {
+                em.getTransaction().rollback();
+            }
+            return null;
+        }
+        em.close();
+        return student;
     }
 }

@@ -11,14 +11,16 @@ import sk.stuba.fei.uim.vsa.domain.Student;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class StudentResponse {
+public class StudentDto {
 
+    private Long id;
     private String firstname;
     private String lastname;
     private String email;
     private Grade grade;
 
-    public StudentResponse(final Student student) {
+    public StudentDto(final Student student) {
+        this.id = student.getId();
         this.firstname = student.getFirstname();
         this.lastname = student.getLastname();
         this.email = student.getEmail();
