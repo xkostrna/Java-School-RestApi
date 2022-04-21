@@ -16,23 +16,15 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "id" : "1",
-  "firstname" : "Michal",
+  "firstname" : "Filip",
   "lastname" : "Novak",
-  "email" : "michal@novak",
+  "email" : "filip@novak",
   "grade" : "BC"
 }
 
 ###
 
-POST http://localhost:8080/school/student
+GET http://localhost:8080/school/student
 Accept: application/json
-Content-Type: application/json
 
-{
-  "id" : "2",
-  "firstname" : "Michal",
-  "lastname" : "Novak",
-  "email" : "michal@novak",
-  "grade" : "BC"
-}
+###

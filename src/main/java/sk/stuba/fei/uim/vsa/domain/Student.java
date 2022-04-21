@@ -10,10 +10,13 @@ import javax.persistence.*;
 
 @Setter
 @Getter
-@Entity
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
+@NamedQuery(name = Student.FIND_ALL, query = "select s from Student s")
 public class Student {
+
+    public static final String FIND_ALL = "Student.findAll";
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
