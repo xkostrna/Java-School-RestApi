@@ -24,6 +24,44 @@ Content-Type: application/json
 
 ###
 
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "filip@novak",
+  "grade" : "BC"
+}
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "",
+  "grade" : "BC"
+}
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "grade" : "BC"
+}
+
+###
+
 GET http://localhost:8080/school/student
 Accept: application/json
 

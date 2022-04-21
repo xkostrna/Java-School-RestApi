@@ -1,13 +1,11 @@
 package sk.stuba.fei.uim.vsa.web;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import sk.stuba.fei.uim.vsa.domain.Student;
-import sk.stuba.fei.uim.vsa.exceptions.AlreadyExistsException;
 import sk.stuba.fei.uim.vsa.service.StudentService;
 import sk.stuba.fei.uim.vsa.web.response.StudentDto;
 
@@ -44,15 +42,16 @@ public class StudentResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response postStudent(String requestBody) {
         try {
-            StudentDto dto = json.readValue(requestBody, StudentDto.class);
+            StudentDto dto = this.json.readValue(requestBody, StudentDto.class);
             Student student = this.service.createStudent(new Student(dto));
+            if(student == null) {
+                return Response.status(Response.Status.CONFLICT).build();
+            }
             return Response.status(Response.Status.CREATED)
-                           .entity(this.json.writeValueAsString(student))
-                           .build();
+                    .entity(this.json.writeValueAsString(student))
+                    .build();
         } catch (JsonProcessingException e) {
-            return Response.noContent().build();
-        } catch (AlreadyExistsException e) {
-            return Response.status(Response.Status.CONFLICT).build();
+            return Response.status(Response.Status.BAD_REQUEST).build();
         }
     }
 

@@ -14,9 +14,11 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @NamedQuery(name = Student.FIND_ALL, query = "select s from Student s")
+@NamedQuery(name = Student.FIND_BY_EMAIL, query = "select s from Student s where s.email = :email")
 public class Student {
 
     public static final String FIND_ALL = "Student.findAll";
+    public static final String FIND_BY_EMAIL = "Student.findByEmail";
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
