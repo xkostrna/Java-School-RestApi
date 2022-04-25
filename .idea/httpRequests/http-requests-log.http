@@ -1,3 +1,18 @@
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "email" : "michal@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-25T165009.500.html
+
+###
+
 GET http://localhost:8080/school/student
 Accept: application/json
 
@@ -621,13 +636,6 @@ Content-Type: application/json
 }
 
 <> 2022-04-21T144816.200.json
-
-###
-
-GET http://localhost:8080/school/student
-Accept: application/json
-
-<> 2022-04-21T144415.200.json
 
 ###
 

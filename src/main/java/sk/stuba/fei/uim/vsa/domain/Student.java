@@ -4,7 +4,9 @@ import lombok.*;
 import sk.stuba.fei.uim.vsa.web.response.StudentDto;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Setter
 @Getter
@@ -13,7 +15,7 @@ import java.util.List;
 @Entity
 @NamedQuery(name = Student.FIND_ALL, query = "select s from Student s")
 @NamedQuery(name = Student.FIND_BY_EMAIL, query = "select s from Student s where s.email = :email")
-public class Student {
+public class Student implements Serializable {
 
     public static final String FIND_ALL = "Student.findAll";
     public static final String FIND_BY_EMAIL = "Student.findByEmail";
@@ -28,6 +30,7 @@ public class Student {
     @Enumerated(EnumType.STRING)
     private Grade grade;
 
+    @ToString.Exclude
     @ManyToMany
     private List<Lecture> lectures;
 
@@ -37,6 +40,7 @@ public class Student {
         this.lastname = dto.getLastname();
         this.email = dto.getEmail();
         this.grade = dto.getGrade();
+        this.lectures = dto.getLectures().stream().map(Lecture::new).collect(Collectors.toList());
     }
 
 

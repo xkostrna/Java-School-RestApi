@@ -1,13 +1,12 @@
 package sk.stuba.fei.uim.vsa.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import sk.stuba.fei.uim.vsa.web.response.LectureDto;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 @Getter
@@ -15,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Lecture {
+public class Lecture implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -23,6 +22,7 @@ public class Lecture {
     private String name;
     private String classroom;
 
+    @ToString.Exclude
     @ManyToMany
     private List<Student> students;
 
@@ -30,6 +30,7 @@ public class Lecture {
         this.id = lectureDto.getId();
         this.name = lectureDto.getName();
         this.classroom = lectureDto.getClassroom();
+        this.students = lectureDto.getStudents().stream().map(Student::new).collect(Collectors.toList());
     }
 
 }
