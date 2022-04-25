@@ -47,7 +47,7 @@ public class StudentService {
             if(em.getTransaction().isActive()) {
                 em.getTransaction().rollback();
             }
-            return null;
+            student = null;
         }
         em.close();
         return student;
@@ -63,7 +63,7 @@ public class StudentService {
             if(em.getTransaction().isActive()) {
                 em.getTransaction().rollback();
             }
-            return null;
+            student = null;
         }
         em.close();
         return student;

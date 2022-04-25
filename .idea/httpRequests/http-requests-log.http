@@ -1,0 +1,633 @@
+GET http://localhost:8080/school/student
+Accept: application/json
+
+<> 2022-04-25T160732.200.json
+
+###
+
+GET http://localhost:8080/school/student
+Accept: application/json
+
+<> 2022-04-25T160714.200.json
+
+###
+
+GET http://localhost:8080/school/student
+Accept: application/json
+
+<> 2022-04-25T160702.200.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "filip@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-25T160643.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "grade" : "BC"
+}
+
+###
+
+GET http://localhost:8080/school/student
+Accept: application/json
+
+<> 2022-04-25T160616.200.json
+
+###
+
+GET http://localhost:8080/school/student
+Accept: application/json
+
+<> 2022-04-25T160611.200.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "email" : "michal@novak",
+  "grade" : "BC"
+}
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "email" : "michal@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-25T160548.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "grade" : "BC"
+}
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "grade" : "BC"
+}
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T155754.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "filip@novak",
+  "grade" : "BC"
+}
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "filip@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T155730.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "email" : "michal@novak",
+  "grade" : "BC"
+}
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "email" : "michal@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T155723.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T155103.500.html
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "",
+  "grade" : "BC"
+}
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "filip@novak",
+  "grade" : "BC"
+}
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "filip@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T155033.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "email" : "michal@novak",
+  "grade" : "BC"
+}
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "email" : "michal@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T155027.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T155001.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T154950.500.html
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T153943.500.html
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T153938.500.html
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T153851.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "filip@novak",
+  "grade" : "BC"
+}
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "filip@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T153843.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "grade" : "BC"
+}
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T153621.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "filip@novak",
+  "grade" : "BC"
+}
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "filip@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T153613.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T153324.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "email" : "michal@novak",
+  "grade" : "BC"
+}
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "email" : "michal@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T153304.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "filip@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T153131.500.html
+
+###
+
+GET http://localhost:8080/school/student
+Accept: application/json
+
+<> 2022-04-21T153123.200.json
+
+###
+
+GET http://localhost:8080/school/student
+Accept: application/json
+
+<> 2022-04-21T153120.200.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "email" : "michal@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T153055.500.html
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "email" : "michal@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T152950.500.html
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "email" : "michal@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T152915.500.html
+
+###
+
+GET http://localhost:8080/school/student
+Accept: application/json
+
+<> 2022-04-21T145354.200.json
+
+###
+
+GET http://localhost:8080/school/student
+Accept: application/json
+
+<> 2022-04-21T145346.200.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "email" : "michal@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T145342.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "email" : "michal@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T145335.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Michal",
+  "lastname" : "Novak",
+  "email" : "michal@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T145329.201.json
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "filip@novak",
+  "grade" : "BC"
+}
+
+###
+
+POST http://localhost:8080/school/student
+Accept: application/json
+Content-Type: application/json
+
+{
+  "firstname" : "Filip",
+  "lastname" : "Novak",
+  "email" : "filip@novak",
+  "grade" : "BC"
+}
+
+<> 2022-04-21T144816.200.json
+
+###
+
+GET http://localhost:8080/school/student
+Accept: application/json
+
+<> 2022-04-21T144415.200.json
+
+###
+
