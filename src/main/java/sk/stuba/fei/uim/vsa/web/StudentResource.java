@@ -69,7 +69,7 @@ public class StudentResource {
                            .entity(this.json.writeValueAsString(new StudentDto(student)))
                            .build();
         } catch (JsonProcessingException e) {
-            return Response.noContent().build();
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).build();
         }
     }
 }
