@@ -5,6 +5,7 @@
     <persistence-unit name="default" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <class>sk.stuba.fei.uim.vsa.domain.Student</class>
+        <class>sk.stuba.fei.uim.vsa.domain.Lecture</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>

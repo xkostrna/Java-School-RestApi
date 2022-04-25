@@ -1,12 +1,10 @@
 package sk.stuba.fei.uim.vsa.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import sk.stuba.fei.uim.vsa.web.response.StudentDto;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Setter
 @Getter
@@ -29,6 +27,9 @@ public class Student {
     private String email;
     @Enumerated(EnumType.STRING)
     private Grade grade;
+
+    @ManyToMany
+    private List<Lecture> lectures;
 
     public Student(StudentDto dto) {
         this.id = dto.getId();
