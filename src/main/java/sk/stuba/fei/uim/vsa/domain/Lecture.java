@@ -1,5 +1,6 @@
 package sk.stuba.fei.uim.vsa.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import sk.stuba.fei.uim.vsa.web.response.LectureDto;
 
@@ -22,8 +23,9 @@ public class Lecture implements Serializable {
     private String name;
     private String classroom;
 
+    @JsonIgnore
     @ToString.Exclude
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.PERSIST)
     private List<Student> students;
 
     public Lecture(LectureDto lectureDto) {

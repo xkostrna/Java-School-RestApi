@@ -33,6 +33,7 @@ public class LectureResource {
                     .entity(json.writeValueAsString(lecture))
                     .build();
         } catch (JsonProcessingException e) {
+            e.printStackTrace();
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).build();
         }
     }

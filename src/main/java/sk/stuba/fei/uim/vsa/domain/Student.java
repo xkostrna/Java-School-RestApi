@@ -1,5 +1,6 @@
 package sk.stuba.fei.uim.vsa.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import sk.stuba.fei.uim.vsa.web.response.StudentDto;
 
@@ -30,8 +31,9 @@ public class Student implements Serializable {
     @Enumerated(EnumType.STRING)
     private Grade grade;
 
+    @JsonIgnore
     @ToString.Exclude
-    @ManyToMany
+    @ManyToMany()
     private List<Lecture> lectures;
 
     public Student(StudentDto dto) {

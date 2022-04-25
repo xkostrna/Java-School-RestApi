@@ -1,5 +1,6 @@
 package sk.stuba.fei.uim.vsa.web.response;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,7 +22,6 @@ public class StudentDto {
     private String lastname;
     private String email;
     private Grade grade;
-
     private List<LectureDto> lectures;
 
     public StudentDto(final Student student) {

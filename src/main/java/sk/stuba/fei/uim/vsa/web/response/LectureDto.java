@@ -1,5 +1,6 @@
 package sk.stuba.fei.uim.vsa.web.response;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
